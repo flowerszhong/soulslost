@@ -103,6 +103,7 @@ add_action( 'widgets_init', 'soulslost_widgets_init' );
  */
 function soulslost_scripts() {
 	wp_enqueue_style( 'soulslost-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'soulslost-style2', get_template_directory_uri() . '/style2.css' );
 
 	wp_enqueue_script( 'soulslost-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
